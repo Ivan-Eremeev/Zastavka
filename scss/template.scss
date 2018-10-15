@@ -87,6 +87,9 @@ body {
 		line-height: 1.18em;
 		text-align: center;
 		text-decoration: none;
+		&:hover {
+			transform: scale(1.05);
+		}
 		span {
 			font-weight: bold;
 		}
@@ -153,6 +156,15 @@ body {
 		font-size: 1.563em;
 		color: #48494c;
 		text-decoration: none;
+		span {
+			border-bottom: 1px solid transparent;
+			transition: .3s;
+		}
+		&:hover {
+			span {
+				border-color: #48494c;
+			}
+		}
 	}
 	&__insta {
 		background-image: url(../img/insta.png);
@@ -164,6 +176,6 @@ body {
 		background-image: url(../img/email.png);
 	}
 	@media (max-width: 767px) {
-		width: 100%;
+		// width: 100%;
 	}
 }
