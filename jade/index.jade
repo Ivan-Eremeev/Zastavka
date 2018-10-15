@@ -1,0 +1,65 @@
+extends blocks/base.jade
+
+block title 
+	title Заставка
+
+block content
+
+	//- include blocks/header.jade
+	
+	.intro.full__height
+		.intro__imageLine
+			.images
+				.images__img
+					img(src="img/intro-0.jpg", alt="image")
+				.images__img
+					img(src="img/intro-1.jpg", alt="image")
+				.images__img
+					img(src="img/intro-2.jpg", alt="image")
+				.images__img
+					img(src="img/intro-3.jpg", alt="image")
+				.images__img
+					img(src="img/intro-4.jpg", alt="image")
+		.intro__center
+			img(src="img/lines.jpg", alt="image").lines.lines_left
+			.catalog
+				a(href="files/Katalog podarkov_2018_19.pdf" target="_blank").catalog__prize КАТАЛОГ подарков 
+					span 2018/19
+			.logo-list
+				img(src="img/life.png", alt="image").logo
+				ul.list
+					li гастрономические<br>путешествия
+					li подарки
+					li мероприятия
+			ul.social
+				li
+					a(href="https://www.instagram.com/rudaya_tatiana").social__insta Татьяна РУДАЯ
+				li
+					a(href="#").social__tel +7(921)401-88-48
+				li
+					a(href="#").social__email bellavita.tatiana@gmail.com
+			img(src="img/lines.jpg", alt="image").lines.lines_right
+		.intro__imageLine
+			.images
+				.images__img
+					img(src="img/intro-5.jpg", alt="image")
+				.images__img
+					img(src="img/intro-6.jpg", alt="image")
+				.images__img
+					img(src="img/intro-7.jpg", alt="image")
+				.images__img
+					img(src="img/intro-8.jpg", alt="image")
+				.images__img
+					img(src="img/intro-9.jpg", alt="image")
+		.intro__footer Приносим свои извинения, сайт находится в разработке. 
+		
+	//- include blocks/footer.jade
+
+block js
+	script(src="js/libs/jquery.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/nifty.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.bundle.min.js")
+	script(src="js/scripts.js")
